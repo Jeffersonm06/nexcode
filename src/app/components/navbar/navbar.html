@@ -1,0 +1,7 @@
+<nav>
+    @for(rt of routes; track $index){
+    <a [class]="rt.class" (click)="navgate(rt.path)">
+        {{rt.label}}
+    </a>
+    }
+</nav>
